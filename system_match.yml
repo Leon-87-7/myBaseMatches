@@ -1,0 +1,26 @@
+# System/terminal commands Espanso matches
+
+matches:
+  #=== ===#
+  # Terminal commands
+  #=== ===#
+  - trigger: ">dev"
+    replace: "npm run dev"
+
+  - trigger: ">mkd"
+    replace: "mkdir -p"
+
+  - trigger: ">remove"
+    replace: "rm -rf"
+
+  - trigger: ">global"
+    replace: "--global"
+
+  - trigger: ">prod"
+    replace: "--production"
+
+  - trigger: ">verbose"
+    replace: "--verbose"
+
+  - trigger: ">version"
+    replace: "--version"

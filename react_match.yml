@@ -1,0 +1,72 @@
+# React/Frontend development Espanso matches
+
+matches:
+  #=== ===#  
+  # React replacements
+  #=== ===#  
+  - trigger: "'/."
+    replace: "/>"
+
+  - trigger: "***form"
+    replace: |
+      <form className='form' onSubmit={handleSubmit}>
+        <h4>controlled inputs</h4>
+        <div className='form-row'>
+          <label htmlFor='name' className='form-label'>
+            name
+          </label>
+          <input
+            type='text'
+            className='form-input'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            id='name'
+          />
+        </div>
+        <div className='form-row'>
+          <label htmlFor='email' className='form-label'>
+            Email
+          </label>
+          <input
+            type='email'
+            className='form-input'
+            id='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <button type='submit' className='btn btn-block'>
+          submit
+        </button>
+      </form>
+
+  #=== ===#
+  # File name replacements (Frontend)
+  #=== ===#
+  # - trigger: ":inh"
+  #   replace: "index.html"
+  
+  # - trigger: ":injs"
+  #   replace: "index.js"
+
+  # - trigger: ":sjs"
+  #   replace: "scripts.js"
+
+  # - trigger: ":ajs"
+  #   replace: "app.js"
+
+  #=== ===#
+  #JavaScript replacements
+  #=== ===#
+  
+  # - trigger: ":dcid"
+  #   replace: "document.getElementById('$|$');"
+
+  # - trigger: ":dcqs"
+  #   replace: "document.querySelector('$|$');"
+
+  # - trigger: ":dcqa"
+  #   replace: "document.querySelectorAll('$|$');"
+
+  # - trigger: ":dcce"
+  #   replace: "document.createElement('$|$');"

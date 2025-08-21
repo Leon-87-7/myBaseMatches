@@ -1,0 +1,18 @@
+# CSS-related Espanso matches
+
+matches:
+  #=== ===#
+  # CSS replacements
+  #=== ===#
+  - trigger: "/css*"
+    replace: "* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }"
+
+  #=== ===#
+  # File name replacements (CSS)
+  #=== ===#
+  # - trigger: ":css"
+  #   replace: "style.css"

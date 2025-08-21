@@ -1,0 +1,51 @@
+# Git commands Espanso matches
+
+matches:
+  #=== ===#
+  # Git commands
+  #=== ===#
+  # - trigger:  "-MM"
+  #   replace: |
+  #     git init && git add . && git commit -m 'initial commit' && git remote add origin https://github.com/Leon-87-7/reponame.git && git branch -M main && git push -u origin main
+  
+  - trigger:  "-gI"
+    replace: "git init"
+
+  - trigger: "-gO"
+    replace: "git remote add origin https://github.com/Leon-87-7/$|$.git"
+
+  - trigger: "-gbp"
+    replace: "git branch -M main && git push -u origin main"
+  
+  - trigger: "-g*"
+    replace: "git add ."
+  
+  - trigger: "-gc"
+    replace: "git commit -m '$|$'"
+
+  - trigger: "-p-"
+    replace: "git push"
+
+  - trigger: "-c-"
+    replace: "git clone $|$"
+
+  - trigger: "-mee"
+    replace: "git merge"
+
+  - trigger: "-stt"
+    replace: "git status"
+
+  - trigger: "-cout"
+    replace: "git checkout"
+
+  - trigger: "-cfg"
+    replace: "git config"
+
+  - trigger: "-rbs"
+    replace: "git rebase"
+
+  - trigger: "-sts"
+    replace: "git stash"
+
+  - trigger: "-fth"
+    replace: "git fetch"

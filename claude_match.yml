@@ -1,0 +1,51 @@
+# Claude AI interaction Espanso matches
+
+matches:
+  #=== ===#
+  # Claude response format
+  #=== ===#
+  
+  - trigger: "*Ftbl"
+    replace: "in the format of a table"
+  
+  - trigger: "*Fls"
+    replace: "in the format of a list"
+  
+  - trigger: "*Fbls"
+    replace: "in the format of a bullet list"
+  
+  - trigger: "*Ftsx"
+    replace: "in the format of a tsx" 
+  
+  - trigger: "*Fjsx"
+    replace: "in the format of a jsx"
+  
+  #=== ===#
+  # Claude chatting
+  #=== ===#
+  - trigger: "*md"
+    replace: "\nWrite a markdown artifact from your response."
+  
+  - trigger: "*jc"
+    replace: "\njust write the code in the pic please"
+  
+  - trigger: "*bcv"
+    replace: "based on the context in this conversation,"
+
+  - trigger: "*htb"
+    replace: "how to build"
+
+  - trigger: "*qwr"
+    replace: "write a quick reference for the"
+  
+  - trigger: "*wrf"
+    replace: "write a deep dive reference for the"
+
+  - trigger: "*fetchref"
+    replace: "fetch a deep dive reference for the"
+
+  - trigger: "*13sc"
+    replace: "write the top 13 keyboard shortcuts for"
+
+  - trigger: "*13com"
+    replace: "write the top 13 keyboard commands for"

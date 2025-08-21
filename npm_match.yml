@@ -1,0 +1,47 @@
+# NPM/Node.js commands Espanso matches
+
+matches:
+  #=== ===#
+  # NPM & Node.js commands
+  #=== ===#
+  - trigger: "/ill"
+    replace: "npm install"
+
+  - trigger: "/p.j"
+    replace: "package.json"
+
+  - trigger: "/dev"
+    replace: "npm run dev"
+
+  - trigger: "/build"
+    replace: "npm run build"
+
+  - trigger: "/test"
+    replace: "npm test"
+
+  - trigger: "/deploy"
+    replace: "npm run deploy"
+
+  - trigger: "/format"
+    replace: "npm run format"
+
+  - trigger: "/lint"
+    replace: "npm run lint"
+
+  - trigger: "/bun"
+    replace: "npm run bundle"
+
+  - trigger: "/cpl"
+    replace: "npm run compile"
+
+  - trigger: "/ills"
+    replace: "npm install --save"
+
+  - trigger: "/illsd"
+    replace: "npm install --save-dev"
+
+  - trigger: "/uill"
+    replace: "npm uninstall"
+
+  - trigger: "/upd"
+    replace: "npm update"

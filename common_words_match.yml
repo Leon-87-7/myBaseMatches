@@ -1,0 +1,29 @@
+# Common word abbreviations Espanso matches
+
+matches:
+  #=== ===#
+  # Common word abbreviations
+  #=== ===#
+  - trigger: "/curr"
+    replace: "currently"
+
+  - trigger: "/comp"
+    replace: "component"
+
+  - trigger: "/con"
+    replace: "container"
+
+  - trigger: "/ctt"
+    replace: "context"
+
+  - trigger: "/iii"
+    replace: "initial"
+
+  - trigger: "/mmi"
+    replace: "commit"
+
+  - trigger: "/brc"
+    replace: "branch"
+
+  - trigger: "/oii"
+    replace: "origin"
