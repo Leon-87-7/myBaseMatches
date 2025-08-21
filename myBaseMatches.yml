@@ -1,0 +1,302 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  #=== ===#
+  # myZip Code
+  #=== ===#
+  - trigger: ":zip"
+    replace: "3479235"
+
+  #=== ===#
+  # My emails
+  #=== ===#
+  - trigger: "l@g"
+    replace: "leoneidelman09@gmail.com"
+
+  - trigger: "l@y"
+    replace: "leon.eidelman@yahoo.com"
+
+  #=== ===#
+  # file name replacement
+  #=== ===#
+  # - trigger: ":inh"
+  #   replace: "index.html"
+  
+  # - trigger: ":injs"
+  #   replace: "index.js"
+
+  # - trigger: ":sjs"
+  #   replace: "scripts.js"
+
+  # - trigger: ":ajs"
+  #   replace: "app.js"
+
+  # - trigger: ":css"
+  #   replace: "style.css"
+
+  
+  #=== ===#
+  # CSS replacements
+  #=== ===#
+  - trigger: "/css*"
+    replace: "* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }"
+  #=== ===#
+  #JavaScript replacements
+  #=== ===#
+  
+  # - trigger: ":dcid"
+  #   replace: "document.getElementById('$|$');"
+
+  # - trigger: ":dcqs"
+  #   replace: "document.querySelector('$|$');"
+
+  # - trigger: ":dcqa"
+  #   replace: "document.querySelectorAll('$|$');"
+
+  # - trigger: ":dcce"
+  #   replace: "document.createElement('$|$');"
+  
+  #=== ===#
+  # Claude response format
+  #=== ===#
+  
+  - trigger: "*Ftbl"
+    replace: "in the format of a table"
+  
+  - trigger: "*Fls"
+    replace: "in the format of a list"
+  
+  - trigger: "*Fbls"
+    replace: "in the format of a bullet list"
+  
+  - trigger: "*Ftsx"
+    replace: "in the format of a tsx" 
+  
+  - trigger: "*Fjsx"
+    replace: "in the format of a jsx"
+  
+  #=== ===#
+  # Claude chatting
+  #=== ===#
+  - trigger: "*md"
+    replace: "\nWrite a markdown artifact from your response."
+  
+  - trigger: "*jc"
+    replace: "\njust write the code in the pic please"
+  
+  - trigger: "*bcv"
+    replace: "based on the context in this conversation,"
+
+  - trigger: "*htb"
+    replace: "how to build"
+
+  - trigger: "*qwr"
+    replace: "write a quick reference for the"
+
+  - trigger: "*13sc"
+    replace: "write the top 13 keyboard shortcuts for"
+
+  - trigger: "*13com"
+    replace: "write the top 13 keyboard commands for"
+
+  #=== ===#
+  # github
+  #=== ===#
+  # - trigger:  "-MM"
+  #   replace: |
+  #     git init && git add . && git commit -m 'initial commit' && git remote add origin https://github.com/Leon-87-7/reponame.git && git branch -M main && git push -u origin main
+  
+  - trigger:  "-gI"
+    replace: "git init"
+
+  - trigger: "-gO"
+    replace: "git remote add origin https://github.com/Leon-87-7/$|$.git"
+
+  - trigger: "-gbp"
+    replace: "git branch -M main && git push -u origin main"
+  
+  - trigger: "-g*"
+    replace: "git add ."
+  
+  - trigger: "-gc"
+    replace: "git commit -m '$|$'"
+
+  - trigger: "-p-"
+    replace: "git push"
+
+  - trigger: "-c-"
+    replace: "git clone $|$"
+
+  - trigger: "-mee"
+    replace: "git merge"
+
+  - trigger: "-stt"
+    replace: "git status"
+
+  - trigger: "-cout"
+    replace: "git checkout"
+
+  - trigger: "-cfg"
+    replace: "git config"
+
+  - trigger: "-rbs"
+    replace: "git rebase"
+
+  - trigger: "-sts"
+    replace: "git stash"
+
+  - trigger: "-fth"
+    replace: "git fetch"
+
+
+  #=== ===#
+  # common world
+  #=== ===#
+  - trigger: "/comp"
+    replace: "component"
+
+  - trigger: "/con"
+    replace: "container"
+
+  - trigger: "/ii"
+    replace: "initial"
+
+  - trigger: "/mmi"
+    replace: "commit"
+
+  - trigger: "/brc"
+    replace: "branch"
+
+  - trigger: "/orii"
+    replace: "origin"
+
+  # Frontend Development & Git Commands
+  - trigger: "/ill"
+    replace: "npm install"
+
+  - trigger: "/p.j"
+    replace: "package.json"
+
+  - trigger: "/dev"
+    replace: "npm run dev"
+
+  - trigger: "/build"
+    replace: "npm run build"
+
+  - trigger: "/test"
+    replace: "npm test"
+
+  - trigger: "/deploy"
+    replace: "npm run deploy"
+
+  - trigger: "/format"
+    replace: "npm run format"
+
+  - trigger: "/lint"
+    replace: "npm run lint"
+
+  - trigger: "/bun"
+    replace: "npm run bundle"
+
+  - trigger: "/cpl"
+    replace: "npm run compile"
+
+  - trigger: "/ills"
+    replace: "npm install --save"
+
+  - trigger: "/illsd"
+    replace: "npm install --save-dev"
+
+  - trigger: "/uill"
+    replace: "npm uninstall"
+
+  - trigger: "/upd"
+    replace: "npm update"
+
+  #=== ===#
+  # common terminal key commands
+  #=== ===#
+  - trigger: ">dev"
+    replace: "npm run dev"
+
+  - trigger: ">mkd"
+    replace: "mkdir -p"
+
+  - trigger: ">remove"
+    replace: "rm -rf"
+
+  - trigger: ">global"
+    replace: "--global"
+
+  - trigger: ">prod"
+    replace: "--production"
+
+  - trigger: ">verbose"
+    replace: "--verbose"
+
+  - trigger: ">version"
+    replace: "--version"
+
+
+  # - trigger: "/doc"
+  #   replace: "cd ~/Documents"
+
+  - trigger: ">FE"
+    replace: "cd ~/FrontEnd"
+
+  - trigger: ">CKN"
+    replace: "cd ~/codeKitchen"
+
+
+
+
+
+#=== ===#  
+  # React replacements
+  #=== ===#  
+  - trigger: "'/."
+    replace: "/>"
+
+  - trigger: "***form"
+    replace: |
+      <form className='form' onSubmit={handleSubmit}>
+        <h4>controlled inputs</h4>
+        <div className='form-row'>
+          <label htmlFor='name' className='form-label'>
+            name
+          </label>
+          <input
+            type='text'
+            className='form-input'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            id='name'
+          />
+        </div>
+        <div className='form-row'>
+          <label htmlFor='email' className='form-label'>
+            Email
+          </label>
+          <input
+            type='email'
+            className='form-input'
+            id='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <button type='submit' className='btn btn-block'>
+          submit
+        </button>
+      </form>
