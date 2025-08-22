@@ -4,14 +4,14 @@
 # For a complete introduction, visit the official docs at: https://espanso.org/docs/
 
 imports:
-  - "css_match.yml"
-  - "claude_match.yml"
-  - "git_match.yml"
-  - "common_words_match.yml"
-  - "npm_match.yml"
-  - "system_match.yml"
-  - "navigation_match.yml"
-  - "react_match.yml"
+  - 'css_match.yml'
+  - 'claude_match.yml'
+  - 'git_match.yml'
+  - 'common_words_match.yml'
+  - 'npm_match.yml'
+  - 'system_match.yml'
+  - 'navigation_match.yml'
+  - 'react_match.yml'
 
 # You can still add matches directly here if needed
 matches: []

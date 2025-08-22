@@ -4,48 +4,48 @@ matches:
   #=== ===#
   # Claude response format
   #=== ===#
-  
-  - trigger: "*Ftbl"
-    replace: "in the format of a table"
-  
-  - trigger: "*Fls"
-    replace: "in the format of a list"
-  
-  - trigger: "*Fbls"
-    replace: "in the format of a bullet list"
-  
-  - trigger: "*Ftsx"
-    replace: "in the format of a tsx" 
-  
-  - trigger: "*Fjsx"
-    replace: "in the format of a jsx"
-  
+
+  - trigger: '*Frtbl'
+    replace: 'in the format of a table'
+
+  - trigger: '*Frls'
+    replace: 'in the format of a list'
+
+  - trigger: '*Frbls'
+    replace: 'in the format of a bullet list'
+
+  - trigger: '*Frtx'
+    replace: 'in the format of a tsx'
+
+  - trigger: '*Frjx'
+    replace: 'in the format of a jsx'
+
   #=== ===#
   # Claude chatting
   #=== ===#
-  - trigger: "*md"
+  - trigger: '*md'
     replace: "\nWrite a markdown artifact from your response."
-  
-  - trigger: "*jc"
+
+  - trigger: '*jc'
     replace: "\njust write the code in the pic please"
-  
-  - trigger: "*bcv"
-    replace: "based on the context in this conversation,"
 
-  - trigger: "*htb"
-    replace: "how to build"
+  - trigger: '*bcv'
+    replace: 'based on the context in this conversation,'
 
-  - trigger: "*qwr"
-    replace: "write a quick reference for the"
-  
-  - trigger: "*wrf"
-    replace: "write a deep dive reference for the"
+  - trigger: '*htb'
+    replace: 'how to build'
 
-  - trigger: "*fetchref"
-    replace: "fetch a deep dive reference for the"
+  - trigger: '*qwr'
+    replace: 'write a quick reference for the'
 
-  - trigger: "*13sc"
-    replace: "write the top 13 keyboard shortcuts for"
+  - trigger: '*wrf'
+    replace: 'write a deep dive reference for the'
 
-  - trigger: "*13com"
-    replace: "write the top 13 keyboard commands for"
+  - trigger: '*fetchref'
+    replace: 'fetch a deep dive reference for the'
+
+  - trigger: '*13ks'
+    replace: 'write the top 13 keyboard shortcuts for'
+
+  - trigger: '*13kc'
+    replace: 'write the top 13 keyboard commands for'

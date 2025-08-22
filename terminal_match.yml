@@ -4,26 +4,26 @@ matches:
   #=== ===#
   # Terminal commands
   #=== ===#
-  - trigger: ">dev"
-    replace: "npm run dev"
+  - trigger: '>dev'
+    replace: 'npm run dev'
 
-  - trigger: ">mkd"
-    replace: "mkdir -p"
+  - trigger: '>mkd'
+    replace: 'mkdir -p'
 
-  - trigger: ">remove"
-    replace: "rm -rf"
+  - trigger: '>remove'
+    replace: 'rm -rf'
 
-  - trigger: ">global"
-    replace: "--global"
+  - trigger: '>global'
+    replace: '--global'
 
-  - trigger: ">prod"
-    replace: "--production"
+  - trigger: '>prod'
+    replace: '--production'
 
-  - trigger: ">verbose"
-    replace: "--verbose"
+  - trigger: '>verbose'
+    replace: '--verbose'
 
-  - trigger: ">version"
-    replace: "--version"
+  - trigger: '>version'
+    replace: '--version'
 
   #=== ===#
   # Directory navigation
@@ -31,8 +31,14 @@ matches:
   # - trigger: "/doc"
   #   replace: "cd ~/Documents"
 
-  - trigger: ">FE"
-    replace: "cd ~/FrontEnd"
+  - trigger: '>FE'
+    replace: 'cd ~/FrontEnd'
 
-  - trigger: ">CKN"
-    replace: "cd ~/codeKitchen"
+  - trigger: '>CKN'
+    replace: 'cd ~/codeKitchen'
+
+  - trigger: '>DCC'
+    replace: 'cd ~/Desktop && claude'
+
+  - trigger: '>~CC'
+    replace: 'cd ~/Desktop/$|$ && claude'
