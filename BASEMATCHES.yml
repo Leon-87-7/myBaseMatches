@@ -10,7 +10,7 @@ imports:
   - 'common_words_match.yml'
   - 'npm_match.yml'
   - 'system_match.yml'
-  - 'navigation_match.yml'
+  - 'terminal_match.yml'
   - 'react_match.yml'
 
 # You can still add matches directly here if needed
