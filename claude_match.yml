@@ -21,13 +21,25 @@ matches:
     replace: 'in the format of a jsx'
 
   #=== ===#
+  # Claude triggers
+  #=== ===#
+  - trigger: '**trg'
+    replace: '<Trigger>$|$</Trigger>'
+
+  - trigger: '**trg.svnotion'
+    replace: '<Trigger>save-to-notion workflow</Trigger>'
+
+  #=== ===#
   # Claude chatting
   #=== ===#
   - trigger: '*md'
     replace: "\nWrite a markdown artifact from your response."
 
-  - trigger: '*jc'
+  - trigger: '*jcode'
     replace: "\njust write the code in the pic please"
+
+  - trigger: '*und'
+    replace: "\nwhat can you understand from the request above? "
 
   - trigger: '*bcv'
     replace: 'based on the context in this conversation,'
