@@ -26,7 +26,7 @@ matches:
   - trigger: '**trg'
     replace: '<Trigger>$|$</Trigger>'
 
-  - trigger: '**trg.svnotion'
+  - trigger: '**svnotion'
     replace: '<Trigger>save-to-notion workflow</Trigger>'
 
   #=== ===#
@@ -39,7 +39,10 @@ matches:
     replace: "\njust write the code in the pic please"
 
   - trigger: '*und'
-    replace: "\nwhat can you understand from the request above? "
+    replace: "\nwhat can you understand from the request above?\n"
+
+  - trigger: '*explbl'
+    replace: 'explain the artifact , line by line,'
 
   - trigger: '*bcv'
     replace: 'based on the context in this conversation,'
