@@ -26,7 +26,7 @@ matches:
   - trigger: '**trg'
     replace: '<Trigger>$|$</Trigger>'
 
-  - trigger: '**svnotion'
+  - trigger: '**svn'
     replace: '<Trigger>save-to-notion workflow</Trigger>'
 
   #=== ===#
