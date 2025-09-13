@@ -45,3 +45,6 @@ matches:
 
   - trigger: "/upd"
     replace: "npm update"
+
+  - trigger: "/vite"
+    replace: "npm create vite@latest ."
